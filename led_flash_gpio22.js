@@ -2,7 +2,7 @@ var fs = require('fs');
 
 var isOn = false;   // 点灯しているかどうか
 var count = 0;      // 点灯した回数
-var maxCount = 10;  // 点滅させる回数
+var maxCount = 20;  // 点滅させる回数
 
 // 22番のGPIOピンを出力として登録
 fs.writeFileSync('/sys/class/gpio/export', '22');
@@ -21,13 +21,13 @@ var blink = setInterval(function() {
 
   if(isOn) {
     // LEDをオフ
-    fs.writeFileSync('/sys/class/gpio/gpio8/value', '0');
+    fs.writeFileSync('/sys/class/gpio/gpio22/value', '0');
     isOn = false;
   } else {
     // LEDをオン
-    fs.writeFileSync('/sys/class/gpio/gpio8/value', '1');
+    fs.writeFileSync('/sys/class/gpio/gpio22/value', '1');
     isOn = true;
     count++;
   }
 
-}, 1000);
+}, 500);
