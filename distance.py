@@ -37,8 +37,8 @@ GPIO.cleanup()
 
 
 # TRIGとECHOのGPIO番号
-TRIG_PIN = 26
-ECHO_PIN = 27
+TRIG_PIN = 11
+ECHO_PIN = 13
 
 # 気温24[℃]の場合の音速[cm/s]
 v = 33150 + 60*24
