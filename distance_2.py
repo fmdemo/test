@@ -2,8 +2,8 @@
 import os
 import time, wiringpi as pi
  
-TRIG_PIN = 26
-ECHO_PIN = 27
+TRIG_PIN = 11
+ECHO_PIN = 13
  
 DURING = 5
 CATCH_DISTANCE = 5
