@@ -32,5 +32,7 @@ def reading(sensor):
         GPIO.cleanup()
     else:
         print "Incorrect usonic() function varible."
-         
-print reading(0)
+
+    while True:
+        print reading(0)
+        time.sleep(1)
