@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
- 
+import time
+
 def reading(sensor):
     import time
     import RPi.GPIO as GPIO
