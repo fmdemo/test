@@ -7,7 +7,7 @@ def reading(sensor):
     GPIO.setwarnings(False)
      
     GPIO.setmode(GPIO.BOARD)
-    TRIG = 26
+    TRIG = 17
     ECHO = 27
      
     if sensor == 0:
