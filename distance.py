@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
+# https://algorithm.joho.info/programming/python/raspberry3-ultrasonic-distance-sensor-hcsr04-temp/
 import RPi.GPIO as GPIO
 import time
 
