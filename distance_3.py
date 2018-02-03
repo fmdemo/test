@@ -33,6 +33,4 @@ def reading(sensor):
     else:
         print "Incorrect usonic() function varible."
 
-#    while False:
-        print reading(0)
-        time.sleep(1)
+print reading(0)
